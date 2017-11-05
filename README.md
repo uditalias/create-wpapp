@@ -10,7 +10,7 @@ Like `create-react-app` which is awesome but very opinionated, have you tried ad
 
 What if all I want to do is just write my code!
 
-- You wan't `babel` to transform your ES6 code? OK!
+- You want `babel` to transform your ES6 code? OK!
 - You want TypeScript instead? OK!
 - You want `react`? OK!
 - You want to style your app with css? OK!
