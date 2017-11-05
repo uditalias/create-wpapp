@@ -58,7 +58,7 @@ This will create a webpack project with dev server hmr in the following structur
     |- .gitignore
     |- package.json
     |- webpack.config.js
-    |- tsconfig.json                // For TypeScript project
+    |- tsconfig.json                // For a TypeScript project
 
 ```
 
