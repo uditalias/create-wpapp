@@ -44,6 +44,27 @@ All Done.
 Run npm start to start the dev server
 ```
 
+This will create a webpack project with dev server hmr in the following structure:
+
+```
+/project
+    |- node_modules
+    |- src
+        |- style
+            |- main.{css,scss}      // Based on your selection
+        |- app.{js,ts,tsx}          // Based on your selection
+    |- views
+        |- index.html
+    |- .gitignore
+    |- package.json
+    |- webpack.config.js
+    |- tsconfig.json                // For TypeScript project
+
+```
+
+Just run `npm start` to start the dev server.
+
+
 ### Contribute?
 
 Just fork, do what you want and [create pull request](https://github.com/uditalias/create-wpapp/compare?expand=1).
