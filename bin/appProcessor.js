@@ -1,8 +1,4 @@
 const { EventEmitter } = require("events");
-const chalk = require('chalk');
-const Stream = require("stream");
-const fs = require("fs");
-const path = require("path");
 const handlers = require("./handlers");
 
 class AppProcessor extends EventEmitter {
