@@ -6,6 +6,11 @@ const { APP_PATH } = require("./params");
 
 let processor = null;
 
+/**
+ * Get all user inputs from setup and create the app processor
+ * 
+ * @param {any} answers 
+ */
 function createApp(answers) {
 
     console.log(`Creating a new webpack app in ${chalk.green(APP_PATH)}...`);
@@ -30,5 +35,6 @@ function onProcessorFinish(err) {
 
     process.exit(0);
 }
+
 
 inquirer.prompt(setup).then(createApp);
