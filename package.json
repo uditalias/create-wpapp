@@ -1,0 +1,33 @@
+{
+  "name": "create-wpapp",
+  "version": "0.1.0",
+  "description": "Boost your workflow with a simple and configurable webpack project generator",
+  "bin": {
+    "create-wpapp": "./bin/index.js"
+  },
+  "keywords": [
+    "webpack",
+    "bootstrap",
+    "project",
+    "starter",
+    "generator"
+  ],
+  "author": {
+    "name": "Udi Talias",
+    "email": "udi.talias@gmail.com",
+    "url": "https://github.com/uditalias"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uditalias/create-wpapp/issues"
+  },
+  "homepage": "https://github.com/uditalias/create-wpapp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uditalias/create-wpapp.git"
+  },
+  "dependencies": {
+    "chalk": "2.3.0",
+    "inquirer": "3.3.0"
+  }
+}
