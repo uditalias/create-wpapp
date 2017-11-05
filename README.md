@@ -4,9 +4,9 @@
 
 A new UI framework just came out, a new library, a new tool.. you want to test it but you need to config webpack in order to start.. 😤
 
-There are lots of webpack app generators, but this one won't make you cry.
+There's lots of webpack app generators, but this one won't make you cry.
 
-Like `create-react-app` which is awesome but very opinionated, have you tried adding something to the `webpack.config.js` file? I know.. you must `eject` everything in order to do so.
+Like `create-react-app` which is awesome but very opinionated.. have you tried adding something to the `webpack.config.js` file? I know.. you must `eject` everything in order to do so.
 
 What if all I want to do is just write my code!
 
