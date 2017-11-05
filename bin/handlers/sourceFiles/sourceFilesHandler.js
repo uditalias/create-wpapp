@@ -1,4 +1,5 @@
 const fs = require("fs");
+const fse = require("fs-extra");
 const path = require("path");
 
 const imports = require("./tasks/imports");
@@ -10,9 +11,7 @@ module.exports = function (appPath, params) {
         params.use_react ? "entry.x.tpl" : "entry.tpl"
     ));
 
-    if (!fs.existsSync(baseDestPath)) {
-        fs.mkdirSync(baseDestPath);
-    }
+    fse.ensureDirSync(baseDestPath);
 
     let entryExt = "js";
 
@@ -31,9 +30,7 @@ module.exports = function (appPath, params) {
     if (params.use_css) {
         const styleDestPath = path.resolve(appPath, "src/style");
 
-        if (!fs.existsSync(styleDestPath)) {
-            fs.mkdirSync(styleDestPath);
-        }
+        fse.ensureDirSync(styleDestPath);
 
         tasks.push(new Promise((resolve, reject) => {
             let ext = params.use_scss ? "scss" : "css";

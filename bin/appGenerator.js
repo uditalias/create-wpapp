@@ -1,19 +1,20 @@
 const { EventEmitter } = require("events");
 const handlers = require("./handlers");
+const fse = require('fs-extra')
 
 /**
  * Creates a webpack app at given `appPath` with user `params`
  * 
- * @class AppProcessor
+ * @class AppGenerator
  * @extends {EventEmitter}
  */
-class AppProcessor extends EventEmitter {
+class AppGenerator extends EventEmitter {
 
     /**
-     * Creates an instance of AppProcessor.
+     * Creates an instance of AppGenerator.
      * @param {any} params - user params from setup process
      * @param {any} appPath - destination app path
-     * @memberof AppProcessor
+     * @memberof AppGenerator
      */
     constructor(params, appPath) {
         super();
@@ -26,11 +27,9 @@ class AppProcessor extends EventEmitter {
      * Process all handlers to create app files
      * and installs app dependencies
      * 
-     * @memberof AppProcessor
+     * @memberof AppGenerator
      */
-    process() {
-        let err = null;
-
+    generate() {
         const tasks = [];
 
         for (let handlerName in handlers) {
@@ -44,9 +43,9 @@ class AppProcessor extends EventEmitter {
 
     /**
      * Fires the `finish` event with no error when all
-     * handles finished successfully
+     * handlers finished successfully
      * 
-     * @memberof AppProcessor
+     * @memberof AppGenerator
      */
     _tasksSuccess() {
         this.emit("finish", null);
@@ -54,10 +53,10 @@ class AppProcessor extends EventEmitter {
 
     /**
      * Fires the `finish` event with error when one
-     * of the handlers throws an error
+     * of the handlers throws one
      * 
      * @param {any} err 
-     * @memberof AppProcessor
+     * @memberof AppGenerator
      */
     _tasksError(err) {
 
@@ -70,11 +69,11 @@ class AppProcessor extends EventEmitter {
      * Clears the `appPath` from files and folders
      * when the process has failed
      * 
-     * @memberof AppProcessor
+     * @memberof AppGenerator
      */
     _cleanup() {
-        // Need to implement
+        fse.emptyDirSync(this._appPath);
     }
 }
 
-module.exports = AppProcessor;
+module.exports = AppGenerator;

@@ -1,14 +1,17 @@
 # create-wpapp
-## A dead-simple webpack starter project generator
+## Boost your workflow with a simple and configurable webpack project generator
 
+### Disclaimer
+This is not a replacement for `create-react-app` by any mean! It's just a way to startup a webpack project with basic configuration in seconds.
 
-A new UI framework just came out, a new library, a new tool.. you want to test it but you need to config webpack in order to start.. 😤
+### Why?
+A new UI framework just came out, a new library, a new tool.. you want to test it but you need to config webpack and install lots of stuff in order to start.. 😤
 
 There's lots of webpack app generators, but this one won't make you cry.
 
 Like `create-react-app` which is awesome but very opinionated.. have you tried adding something to the `webpack.config.js` file? I know.. you must `eject` everything in order to do so.
 
-What if all I want to do is just write my code!
+What if all I want to do is just to write my code, maybe to add a webpack plugin or a loader so I can run it in my browser.
 
 - You want `babel` to transform your ES6 code? OK!
 - You want TypeScript instead? OK!
@@ -76,3 +79,11 @@ Just [open one](https://github.com/uditalias/create-wpapp/issues/new).
 
 
 This tool will evolve from time to time... I know it's very simple but tests and more options will be added to the setup process so you can choose (or not) what you want in your **dead simple webpack project!**
+
+
+
+
+---
+## License
+
+Licensed under the MIT License (Basically - do anything you want license). See [License](LICENSE) for more details.

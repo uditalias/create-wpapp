@@ -1,4 +1,5 @@
 const fs = require("fs");
+const fse = require("fs-extra");
 const path = require("path");
 
 const name = require("./tasks/name");
@@ -10,9 +11,7 @@ module.exports = function (appPath, params) {
     const baseDestPath = path.resolve(appPath, "views");
     const destPath = path.resolve(baseDestPath, "index.html");
 
-    if (!fs.existsSync(baseDestPath)) {
-        fs.mkdirSync(baseDestPath);
-    }
+    fse.ensureDirSync(baseDestPath);
 
     return new Promise((resolve, reject) => {
         let stream = fs.createReadStream(templatePath)
