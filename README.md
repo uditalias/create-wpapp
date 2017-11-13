@@ -2,16 +2,16 @@
 ## Boost your workflow with a simple and configurable webpack project generator
 
 ### Disclaimer
-This is not a replacement for `create-react-app` by any mean! It's just a way to startup a webpack project with basic configuration in seconds.
+This is not a replacement for `create-react-app` by any means! It's just a way to startup a webpack project with basic configuration in seconds.
 
 ### Why?
 A new UI framework just came out, a new library, a new tool.. you want to test it but you need to config webpack and install lots of stuff in order to start.. 😤
 
 There's lots of webpack app generators, but this one won't make you cry.
 
-Like `create-react-app` which is awesome but very opinionated.. have you tried adding something to the `webpack.config.js` file? I know.. you must `eject` everything in order to do so.
+Like `create-react-app` which is awesome but very opinionated... have you tried adding something to the `webpack.config.js` file? I know... you must `eject` everything in order to do so.
 
-What if all I want to do is just to write my code, maybe to add a webpack plugin or a loader so I can run it in my browser.
+What if all I want to do is just write my code, maybe add a webpack plugin or a loader so I can run it in my browser?
 
 - You want `babel` to transform your ES6 code? OK!
 - You want TypeScript instead? OK!
@@ -19,14 +19,14 @@ What if all I want to do is just to write my code, maybe to add a webpack plugin
 - You want to style your app with css? OK!
 - You want to work with SCSS preprocessor? OK!!!
 
-I put all my opinions aside and focus in simplicity.. and guess what? you don't need to eject anything in order to edit/add/remove something so you can just start to write your code! **THAT'S - IT!**
+I put all my opinions aside and focused on simplicity, and guess what? you don't need to eject anything in order to edit/add/remove something so you can just start writing your code! **THAT'S - IT!**
 
 
 ### Install?
 
 `npm install -g create-wpapp`
 
-### How it works?
+### How does it work?
 
 ```
 $ mkdir project
@@ -70,7 +70,7 @@ Just run `npm start` to start the dev server.
 
 ### Contribute?
 
-Just fork, do what you want and [create pull request](https://github.com/uditalias/create-wpapp/compare?expand=1).
+Just fork, do what you want and [create a pull request](https://github.com/uditalias/create-wpapp/compare?expand=1).
 
 ### Issue?
 
